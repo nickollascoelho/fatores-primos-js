@@ -3,7 +3,7 @@
 const primeFactorsCache = {};
 
 function getPrimeFactors(number) {
-  if (number < 2) return [];
+  if (isNaN(number) || number < 2) return [];
   if (primeFactorsCache.hasOwnProperty(number)) return primeFactorsCache[number];
   const original = number;
   const primeFactors = [];
