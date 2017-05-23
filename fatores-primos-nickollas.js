@@ -4,6 +4,7 @@ const primeFactorsCache = {};
 
 function getPrimeFactors(number) {
   if (isNaN(number) || number < 2) return [];
+  if (!Number.isInteger(number)) return [];
   if (primeFactorsCache.hasOwnProperty(number)) return primeFactorsCache[number];
   const original = number;
   const primeFactors = [];

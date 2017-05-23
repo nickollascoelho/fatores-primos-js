@@ -25,7 +25,7 @@ test('parametros sem fatores primos', (t) => {
   t.same(fatoresPrimos(null), []);
   t.same(fatoresPrimos(undefined), []);
   t.same(fatoresPrimos(-1), []);
-  t.same(fatoresPrimos(1.2), []);
+  t.same(fatoresPrimos(98.76), []);
   t.same(fatoresPrimos('test'), []);
   t.same(fatoresPrimos([]), []);
   t.same(fatoresPrimos({}), []);
