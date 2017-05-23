@@ -1,15 +1,15 @@
 'use strict';
 
-const primeFactorsCache = {};
+const primeFactorsMemo = {};
 
 function getPrimeFactors(number) {
   if (isNaN(number) || number < 2) return [];
   if (!Number.isInteger(number)) return [];
 
-  if (primeFactorsCache.hasOwnProperty(number)) return primeFactorsCache[number];
+  if (primeFactorsMemo.hasOwnProperty(number)) return primeFactorsMemo[number];
 
   const primeFactors = calcPrimeFactors(number);
-  primeFactorsCache[number] = primeFactors;
+  primeFactorsMemo[number] = primeFactors;
   return primeFactors;
 }
 
