@@ -1,0 +1,23 @@
+{
+  "name": "fatores-primos",
+  "version": "1.0.0",
+  "description": "Dado um número inteiro positivo, calcula os seus fatores primos.",
+  "main": "fatores-primos-nickollas.js",
+  "scripts": {
+    "test": "tape fatores-primos-test.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicoelho/fatores-primos.git"
+  },
+  "author": "Nickollas Coelho <nickollas.coelho@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nicoelho/fatores-primos/issues"
+  },
+  "homepage": "https://github.com/nicoelho/fatores-primos#readme",
+  "devDependencies": {
+    "tap-spec": "4.1.1",
+    "tape": "4.6.3"
+  }
+}
